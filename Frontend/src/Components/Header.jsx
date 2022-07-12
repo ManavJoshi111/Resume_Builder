@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../Styles/header.css";
 import Fade from "react-reveal/Fade";
-import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
 import image from "../Images/resume_cover.png";
 
 const Header = (props) => {
@@ -28,7 +26,6 @@ const Header = (props) => {
   useEffect(() => {
     Authenticate();
   }, []);
-  const navigate = useNavigate();
   return (
     <div className="container-fluid mt-3 flex-wrap d-flex flex-column-reverse flex-md-row justify-content-center align-items-center">
       <Fade bottom>
