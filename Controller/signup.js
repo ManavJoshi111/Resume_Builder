@@ -15,10 +15,6 @@ const dest=multer.diskStorage({
     }
 })
 var upload = multer({ storage: dest });
-router.get("/", (req, res) => {
-  res.cookie("token", "token");
-  res.send("Hello World from register");
-});
 
 router.get("/signup",(req,res)=>{
   console.log(User);
