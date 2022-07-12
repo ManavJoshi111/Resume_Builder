@@ -28,18 +28,6 @@ app.use(express.static('./Public'));
   });
 
 // Declaring Routes
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
-app.get("/login", (req, res) => {
-  res.send("Hello World from login");
-});
-
-app.get("/signup", (req, res) => {
-  console.log(process.env.SECRET_KEY);
-  res.send("Hello World from signup");
-});
 
 // app.get("/makecv", (req, res) => {
 //   console.log("Make CV Router from backend");
