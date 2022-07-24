@@ -51,7 +51,7 @@ const Profile = (props) => {
             <div class="row">
               <div class="">
                 <div class="profile-img">
-                  <img src={"http://localhost:3001/Images/" + User.username + ".jpg"} alt="" />
+                  <img src={"../../public/Images" + User.username + ".jpg"} alt="" />
                 </div>
               </div>
               <div class="row-md-6">
